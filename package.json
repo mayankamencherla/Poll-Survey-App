@@ -1,0 +1,19 @@
+{
+  "name": "poll-survey-app",
+  "version": "1.0.0",
+  "description": "Make polls/surveys and share url ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayankamencherla/Poll-Survey-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayankamencherla/Poll-Survey-App/issues"
+  },
+  "homepage": "https://github.com/mayankamencherla/Poll-Survey-App#readme"
+}
