@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body ng-controller="LoginController">
+
+    <!-- Form handling -->
+    <div class="form" align="center">
+            <form id="loginForm" type="submit" novalidate>
+                <div class="form-fields" ng-repeat="field in fields">
+                    <input class="fields" type="text" ng-model="field.name" />
+                    <label>{{ field.name }}</label>
+                </div>
+                <input type="button" class="signup">
+            </form>
+    </div>
+
+        <!-- All the JavaScript is below -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+        <script>
+            // Binding the angular app to loginPage
+            var loginPage = angular.module('myApp', []);
+
+            // Login Controller
+            loginPage.controller('LoginController', ['$scope', function ($scope){
+                $scope.fields = [
+                    {name: 'Email ID'},
+                    {name: 'Password'},
+                ]
+            }]);
+        </script>
+
+    </body>
+</html>
