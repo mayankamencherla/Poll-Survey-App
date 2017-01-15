@@ -6,7 +6,7 @@ const fs = require('fs');
 // Creating an express server and setting all the view + static content
 var app = express();
 app.set('view engine', 'hbs');
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/public/views');
 app.use(express.static(__dirname + '/public')); 
 
 /* ------------------------- Routes begin ----------------------------- */

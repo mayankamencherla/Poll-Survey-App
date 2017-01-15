@@ -3,6 +3,8 @@ logs
 *.log
 npm-debug.log*
 
+# Custom
+Notes.txt
 .DS_Store
 
 # Runtime data
