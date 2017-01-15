@@ -31,6 +31,14 @@
                 ]
             }]);
 
+            // Login Controller
+            loginPage.controller('LoginController', ['$scope', function ($scope){
+                $scope.fields = [
+                    {name: 'Email ID'},
+                    {name: 'Password'},
+                ]
+            }]);
+            
             // Changing interpolate provider to prevent interference with hbs
             loginPage.config(function($interpolateProvider){
                 $interpolateProvider.startSymbol('{[{').endSymbol('}]}');
