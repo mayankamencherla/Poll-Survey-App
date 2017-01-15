@@ -10,7 +10,8 @@ module.exports.controller = (app) => {
         });
     });
 
-    app.get('/welcome', (request, response) => {
+    app.post('/welcome', (request, response) => {
+        console.log(request.body);
         response.send('Welcome');
     });
 
