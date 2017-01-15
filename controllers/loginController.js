@@ -4,6 +4,6 @@ var mongodb = require('mongodb');
 
 module.exports.controller = (app) => {
     app.get('/', (request, response) => {
-        response.render('index/signin.hbs');
+        response.render('signin.hbs');
     });
 }

@@ -1,0 +1,33 @@
+body{
+    background-image: url("/images/bridge.jpg");
+    background-size: cover;
+}
+
+.form{
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    background: #b71c1c;
+    opacity: 0.6;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#loginForm{
+    margin-top: 280px;
+}
+
+.fields{
+    padding: 10px;
+    width: 250px;
+}
+
+.signup{
+    margin-top: 50px;
+    width: 250px;
+    padding: 10px;
+}
