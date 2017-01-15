@@ -9,12 +9,16 @@
 
     <!-- Form handling -->
     <div class="form" align="center">
-            <form id="loginForm" type="submit" novalidate>
+            <form id="loginForm" action="{{welcomeUrl}}" method="post">
                 <div class="form-fields" ng-repeat="field in fields">
                     <input class="fields" ng-model="field.content" placeholder="{[{field.name}]}" />
                 </div>
-                <input type="button" class="signup">
+                    <button id="signin">Sign In</button>
             </form>
+            <div id="signup">
+                <a>Don't have an account?</a>
+                <a href="{{signupUrl}}">Sign Up</button>
+            </div>
     </div>
 
         <!-- All the JavaScript is below -->

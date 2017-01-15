@@ -18,7 +18,7 @@ body{
 }
 
 #loginForm{
-    margin-top: 280px;
+    margin-top: 260px;
 }
 
 .fields{
@@ -30,10 +30,25 @@ body{
     font-weight: 500;
 }
 
-.signup{
-    margin-top: 30px;
-    width: 250px;
-    font-size: 20px;
-    background-color: #dd2c00;
-    border-radius: 12px;
+#signin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px 11px;
+    font-size: 21px;
+    background-color: #b71c1c;
+    font-weight: bold;
+    text-shadow: 1px 1px #b71c1c;
+    color: #ffffff;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid #b71c1c;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+#signup{
+    font-size: 21px;
 }
