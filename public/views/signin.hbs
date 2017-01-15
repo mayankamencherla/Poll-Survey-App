@@ -11,8 +11,7 @@
     <div class="form" align="center">
             <form id="loginForm" type="submit" novalidate>
                 <div class="form-fields" ng-repeat="field in fields">
-                    <input class="fields" type="text" ng-model="field.name" />
-                    <label>{{ field.name }}</label>
+                    <input class="fields" ng-model="field.content" placeholder="{[{field.name}]}" />
                 </div>
                 <input type="button" class="signup">
             </form>
@@ -24,6 +23,14 @@
             // Binding the angular app to loginPage
             var loginPage = angular.module('myApp', []);
 
+            // Login Controller -> Binding user input to content
+            loginPage.controller('LoginController', ['$scope', function ($scope){
+                $scope.fields = [
+                    {name: 'Email ID', content: ''},
+                    {name: 'Password', content: ''},
+                ]
+            }]);
+
             // Login Controller
             loginPage.controller('LoginController', ['$scope', function ($scope){
                 $scope.fields = [
@@ -31,6 +38,11 @@
                     {name: 'Password'},
                 ]
             }]);
+            
+            // Changing interpolate provider to prevent interference with hbs
+            loginPage.config(function($interpolateProvider){
+                $interpolateProvider.startSymbol('{[{').endSymbol('}]}');
+            });
         </script>
 
     </body>
